@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="bg-black">
+
+<head>
+    <meta charset="UTF-8">
+    {%if title%}
+    <title>{{title}} | register</title>
+    {%else%}
+    <title>register</title>
+    {%endif%}
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- bootstrap 3.0.2 -->
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/css/bootstrap.min.css">
+    <!-- Theme style -->
+    <link href="static/css/AdminLTE.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="/static/css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery-1.11.1.js"></script>
+</head>
+<body class="bg-black">
+
+    <!--错误提示框-->
+    {%if not can_register['result']%}
+    {%if can_register['reason']%}
+    <div id="errorAlert" class="alert alert-danger alert-dismissable">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>{{can_register['reason']}}</strong>
+    </div>
+    {%endif%}
+    {%endif%}
+    <!--错误提示框-->
+    {%if error%}
+    <div id="errorAlert" class="alert alert-danger alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>{{error}}</strong>
+    </div>
+    {%endif%}
+<!--注册框-->
+    <div class="form-box" id="login-box">
+        <div class="header">注册</div>
+        <form action="" method="post" name="register">
+            <div class="body bg-gray">
+                <div class="form-group">
+                    <input type="email" name="email"  class="form-control" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="username" class="form-control" placeholder="User ID" />
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password2" class="form-control" placeholder="Retype password"/>
+                </div>
+            </div>
+            <div class="footer">                    
+                <button type="submit" class="btn bg-olive btn-block">确认</button>
+
+                <a href="login" class="text-center">已经有帐号?</a>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

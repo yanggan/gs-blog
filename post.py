@@ -94,4 +94,13 @@ class Post:
 	#删
 	def del_Post(self,id=None,permalink=None):
 		pass
-
+	#
+	def get_Post_by_Pagenumber(self,current_page,page_number=config.PAGE_NUMBERS,dict={}):
+		print current_page
+		post = self.db.get_document(dict)['documents']
+		posts = self.add_markdown(post)
+		print posts
+		if posts != None:
+			return posts
+		else:
+			return [{'title':'no this post'}]

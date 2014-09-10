@@ -7,6 +7,9 @@ DEBUG = True
 IS_OPEN = True #博客是否开放注册?
 IS_OPEN_REASON = "抱歉暂不开放注册" #原因
 
+#page numbers
+PAGE_NUMBERS = 5
+
 #db setup
 MONGODB_HOST = 'localhost'
 MONGODB_PORT = 27017

@@ -285,13 +285,15 @@ class Mgdb:
 			return result
 
 	#查 document
-	def get_document(self,doc_key={},col_name=DEFAULT_COLLECTION_NAME,db_name=DEFAULT_DB_NAME):
+	def get_document(self,doc_key={},limit=0,skip=0,col_name=DEFAULT_COLLECTION_NAME,db_name=DEFAULT_DB_NAME):
 		result = {'result':False,'reason':'some reason','documents':{}}
 		col = None
 		x = self.get_collection(col_name,db_name)
 		if x['result']:
 			col = x['collections']
 			#获取所有符合数据,不过返回是对象
+			if limit != 0 and skip != 0:
+				y = col.find(doc_key).limit(limit).skip(skip)
 			y = col.find(doc_key)
 			if y.count() != 0:
 				result['result'] = True

@@ -45,9 +45,27 @@ def index():
 		posts=give_post,
 		text = "<h1>yanggan</h1>"
 		)
-@app.route('/post/')
+#post 
+@app.route('/post/',defaults={'page_numbers':1})
+@app.route('/post/<int:page_numbers>')
+def posts(page_numbers):
+
+	give_post = MyPost.get_all_Post()
+	#返回index.html页面
+	username = session.get('username')
+	MyPost.get_Post_by_Pagenumber(page_numbers)
+	return str(page_numbers)
+	return render_template(
+		'default/index.html',
+		title=app.config['BLOG_TITLE'],
+		username=username,
+		posts=give_post,
+		text = "<h1>yanggan</h1>"
+		)
+
+@app.route('/list/')
 @app.route('/list')
-def post_list():
+def list():
 	give_post = MyPost.get_all_Post()
 	username = session.get('username')
 	return render_template(

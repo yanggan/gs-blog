@@ -123,6 +123,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app.py",
+			"settings":
+			{
+				"buffer_size": 5299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "post.py",
+			"settings":
+			{
+				"buffer_size": 2938,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.py",
+			"settings":
+			{
+				"buffer_size": 409,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mgdb.py",
+			"settings":
+			{
+				"buffer_size": 8822,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -164,6 +196,7 @@
 	},
 	"file_history":
 	[
+		"/home/yg/blog/yanggan/post.py",
 		"/home/yg/blog/gs-blog/mgdb.py",
 		"/home/yg/blog/gs-blog/templates/default/index.html",
 		"/home/yg/blog/gs-blog/user.py",
@@ -238,6 +271,113 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app.py",
+					"settings":
+					{
+						"buffer_size": 5299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1190,
+								1190
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "post.py",
+					"settings":
+					{
+						"buffer_size": 2938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2648,
+								2648
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config.py",
+					"settings":
+					{
+						"buffer_size": 409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mgdb.py",
+					"settings":
+					{
+						"buffer_size": 8822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8456,
+								8456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2312.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

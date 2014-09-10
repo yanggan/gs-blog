@@ -1,10 +1,10 @@
 {%extends 'default/post_base.html'%}
 {%block contents%}
 {%for p in posts %}
-<h1>{{p['title']}}</h1>
+<h2>{{p['title']}}</h2>
 <p>{{p['time']}}</p><br>
 
-{{p['mk_posts']|safe}}
+{{p['mk_posts']}}
 <hr>
 {%endfor%}
 {%endblock%}

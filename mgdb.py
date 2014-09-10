@@ -292,9 +292,10 @@ class Mgdb:
 		if x['result']:
 			col = x['collections']
 			#获取所有符合数据,不过返回是对象
-			if limit != 0 and skip != 0:
+			if limit != 0:
 				y = col.find(doc_key).limit(limit).skip(skip)
-			y = col.find(doc_key)
+			else:
+				y = col.find(doc_key)
 			if y.count() != 0:
 				result['result'] = True
 				result['reason'] = "find it"

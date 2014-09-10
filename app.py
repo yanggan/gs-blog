@@ -37,30 +37,28 @@ def index():
 	give_post = MyPost.get_all_Post()
 	#返回index.html页面
 	username = session.get('username')
-	text = "<h1>yanggan</h1>"
 	return render_template(
 		'default/index.html',
 		title=app.config['BLOG_TITLE'],
 		username=username,
 		posts=give_post,
-		text = "<h1>yanggan</h1>"
 		)
 #post 
-@app.route('/post/',defaults={'page_numbers':1})
-@app.route('/post/<int:page_numbers>')
-def posts(page_numbers):
+
+@app.route('/page/',defaults={'page_numbers':1})
+@app.route('/page/<int:page_numbers>')
+def pages(page_numbers):
 
 	give_post = MyPost.get_all_Post()
 	#返回index.html页面
 	username = session.get('username')
-	MyPost.get_Post_by_Pagenumber(page_numbers)
-	return str(page_numbers)
+	posts = MyPost.get_Post_by_Pagenumber(page_numbers)
+	print len(posts)
 	return render_template(
 		'default/index.html',
 		title=app.config['BLOG_TITLE'],
 		username=username,
-		posts=give_post,
-		text = "<h1>yanggan</h1>"
+		posts=posts
 		)
 
 @app.route('/list/')

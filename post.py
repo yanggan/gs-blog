@@ -95,11 +95,22 @@ class Post:
 	def del_Post(self,id=None,permalink=None):
 		pass
 	#
-	def get_Post_by_Pagenumber(self,current_page,page_number=config.PAGE_NUMBERS,dict={}):
-		print current_page
-		post = self.db.get_document(dict)['documents']
+	def get_Post_by_Pagenumber(self,current_page,limit=config.PAGE_NUMBERS,dict={}):
+		#pass documents with get documents
+		if current_page == 1:
+			skip = 0
+		elif current_page > 1: 
+			skip = (current_page -1) * limit 
+			print skip
+		else:
+			print "error"
+
+		print "current_page:",current_page
+		print "limit:",limit
+		print "skip:",skip
+		post = self.db.get_document(dict,limit=limit,skip=skip)['documents']
 		posts = self.add_markdown(post)
-		print posts
+		print "list length:",len(posts)
 		if posts != None:
 			return posts
 		else:

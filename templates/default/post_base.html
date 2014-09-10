@@ -54,7 +54,8 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/">Newest</a></li>
-            <li><a href="/list">Post</a></li>
+            <li><a href="/list">List</a></li>
+            <li><a href="/page">Post</a></li>
             {%if username%}
             <li><a href="/newpost">NewPost</a></li>
             <li><a href="/logout">Logout</a></li>
@@ -74,17 +75,6 @@
 	{%block contents%}
     {%endblock%}
 	</div><!--主要的contents区结束-->
-
-	<!--分页-->
-	<ul class="pagination">
-		<li><a href="#">Prev</a></li>
-		<li><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">Next</a></li>
-	</ul>
-
 
 
 </div>

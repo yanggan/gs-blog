@@ -1,0 +1,144 @@
+/*
+	这里是index.html的css样式表
+
+
+ */
+*{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+
+
+/* class topLogo的css样式表 */
+.topLogo{
+	width:100%;
+	height:120px;
+	background-color:#5EAAE4;
+}
+
+/*logo的一个容器  */
+.logoContainer{
+	width:980px;
+	height:100px;
+
+}
+
+/* 用于logo和search居中对的容器*/
+.imagesSearchContainar{
+	width:980px;
+	margin:0px auto;
+}
+
+/* 网页的logo图标 */
+.logoImage{
+	margin-top:30px;
+	width:400px;;
+	height:70px;
+	background-color:#09a;
+	float:left;
+ 
+}
+ 
+
+/* 网页里面搜索框 */
+.search{
+	margin-top:50px;
+	float:right;
+}
+
+/* 搜索框框里面搜索的地方*/
+#searchForm{
+	background-color:#fff;
+	height:30px;
+	width:220px;
+	float:left;
+}
+
+/* 搜索框里面的按钮 */
+#searchButton{
+	height:30px;
+	float:left;
+	width:50px;
+	font-weight:bold;
+	font-size:20px;
+	background-color:#A3D0F2;
+}
+ 
+ 
+ 
+ 
+/*********** 最上面的导航栏的css  topBar*/
+.topBar{
+	width:100%;
+	height:40px;
+	background-color:#A3D0F2;
+}
+
+/* 导航栏中字体块的布局 **/
+.fontBlock{
+	width:980px;
+	margin:0px auto;
+}
+.fontBlock ul li a{
+	display:block;
+	text-decoration:none;
+	float:left;
+/*	background: none repeat scroll 0% 0% #FFF;
+	这个在javascript中使用*/
+}
+/*  导航样式  */
+.topBar ul{
+	list-style-type:none ;
+}
+
+
+.topBar  ul   li{
+	list-style-type:none ;	 
+	float:left;
+	display:block;
+	width:196px; 
+	height:40px;
+	font-size:20px;
+	line-height:40px;
+}
+
+
+
+/* container的CSS样式表 */
+.container{
+	width:980px;
+	height:573px;
+	background-color:#E0E1E2;
+}
+
+
+/*右侧信息和中间的文章内容的容器 */
+.centerContant_rightMessage{
+	width:980px;
+
+}
+
+/*中间文章放置处 */
+.centerContant{
+	width:740px;
+	height:573px;
+	float:left;
+	background-color:#fff;
+}
+
+/* 右侧信息展览*/
+.rightMessage{
+	width:240px;
+	height:573px;
+	background-color:E0E1E2;
+	float:left;
+}
+
+/* 这时网站最下面的声明*/
+.Foot{
+	width:980px;
+	height:100px;
+	background-color:#5EAAE4;
+	
+}
+
+/* */
+
+/* */

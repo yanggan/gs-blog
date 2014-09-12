@@ -77,6 +77,7 @@ def list():
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
 	return "这是第 " + str(post_id) + " 篇文章"	
+
 #by permalink
 @app.route('/post/<permalink>')
 def get_post_by_permalink(permalink):
@@ -86,11 +87,30 @@ def get_post_by_permalink(permalink):
 	return render_template('default/single_post.html',username=username,posts=posts)
 
 
+# edit post
+@app.route('/edit/<_id>',methods=['GET','POST'])
+@login_required
+def edit_post(_id):
+	if request.method == "POST":
+		dict = {'title':request.form.get('title'),'posts':request.form.get('posts')}
+		result = MyPost.update_by_id(_id,new=dict)
+		if result:
+			return "success"
+	post = {}
+	posts = MyPost.get_by_id(_id)
+	print posts
+	return render_template('default/edit.html',posts=posts[0])
+
+
 #del post
-@app.route('/del',defaults={'id':None})
-@app.route('/del/<id>')
-def del_post(id):
-	return "这是第 " + str(id) + " 篇文章"	
+@app.route('/del/<_id>')
+@login_required
+def del_post(_id):
+	result = MyPost.del_Post(_id=_id)
+	if result:
+		flash('del success')
+		return redirect(url_for('list'))
+	return "del faied 这是 " + str(_id) + " 文章"	
 
 @app.route('/login',methods=['GET','POST'])
 def login():
@@ -178,4 +198,4 @@ def about():
 ###########################运行区
 if __name__ == "__main__":
 	app.debug = app.config['DEBUG'] #原来配置文件要这样读
-	app.run(host="0.0.0.0",port=8080)
+	app.run(host="0.0.0.0",port=5000)

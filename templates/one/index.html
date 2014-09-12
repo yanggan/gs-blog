@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BLOG</title>
+<link rel="stylesheet" type="text/css" href="/static/one/css/global.css" />
+</head>
+
+<body>
+
+
+<!--这里是页面的logo images和search的条框---->
+<div id="topLogo" class="topLogo">
+	<!---用于logo和search居中对的容器--->
+	<div id="imagesSearchContainar" class="imagesSearchContainar">
+		
+		<div id="logoImage" class="logoImage">
+		</div>
+	
+		<div id="search" class="search">
+			<form name="input"  action="#"  method="get">
+			<input id="searchForm"  type="text"  name="searchForm">
+			<input id="searchButton"  type="submit"  value="搜索">
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!--最上面的导航栏-->
+	<div id="topBar" class="topBar">
+		<div id="fontBlock" class="fontBlock">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">系统运维</a></li>
+				<li><a href="#">编程语言</a></li>
+				<li><a href="#">学习心得</a></li>
+				<li><a href="#">其他</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+<center>
+
+<!--这是网站的主体容器 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<div id="container" class="container">
+
+		<!--右侧信息和中间的文章内容的容器 -->
+		<div id="centerContant_rightMessage" class="centerContant_rightMessage">
+			<!--中间文章放置处-->
+			<div id="centerContant" class="centerContant">
+			{%if posts%}
+			<h1>{{posts[0]['title']|safe}}</h1><br>
+			{{posts[0]['mk_posts']|safe}}
+			{%endif%}
+			</div>
+			<!--右侧信息展览-->
+			<div id="rightMessage" class="rightMessage">
+			</div>
+		</div>
+	
+		
+		
+	</div>
+	<!--这时网站最下面的声明-->
+		<div id="Foot" class="Foot">
+		</div>
+</center>
+</body>
+</html>

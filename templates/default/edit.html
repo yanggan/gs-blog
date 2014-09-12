@@ -1,0 +1,9 @@
+	<form action="" method="POST">
+		{%if posts%}
+		title:<textarea name="title" id="" cols=110" rows="1" name="title">{{posts['title']}}</textarea><br>
+		contents:
+		<textarea name="posts" id="" cols="100" rows="30" name="posts">{{posts['posts']}}</textarea>
+		<input type="submit" value="submit">
+		<input type="reset">
+		{%endif%}
+	</form>

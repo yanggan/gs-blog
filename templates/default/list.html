@@ -3,10 +3,12 @@
 <ul>
 	{%for p in posts[::-1] %}
 	<li>
-		<h3><a href="/post/{{p['permalink']}}">{{p['title']}}</a></h3>		
+		<h4><a href="/post/{{p['permalink']}}">{{p['title']}}</a></h4>		
 		<p>{{p['time']}}</p>
+		{%if username%}
 		<a href="/edit/{{p['_id']}}">edit</a>&nbsp
-		<a href="/del/{{p['_id']}}">delete</a> 
+		<a href="/del/{{p['_id']}}">delete</a>
+		{%endif%} 
 	</li>
 	{%endfor%}
 </ul>

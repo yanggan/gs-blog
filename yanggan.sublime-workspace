@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"std",
+				"std_post"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
 				"c",
 				"centerContant_rightMessage"
 			],
@@ -80,10 +88,6 @@
 				"username"
 			],
 			[
-				"re",
-				"result"
-			],
-			[
 				"l",
 				"login"
 			],
@@ -131,7 +135,7 @@
 			"file": "app.py",
 			"settings":
 			{
-				"buffer_size": 5334,
+				"buffer_size": 5706,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +143,7 @@
 			"file": "post.py",
 			"settings":
 			{
-				"buffer_size": 3487,
+				"buffer_size": 4183,
 				"line_ending": "Unix"
 			}
 		},
@@ -197,6 +201,22 @@
 			{
 				"buffer_size": 1861,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/default/list.html",
+			"settings":
+			{
+				"buffer_size": 338,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/default/edit.html",
+			"settings":
+			{
+				"buffer_size": 340,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -313,7 +333,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -321,15 +341,15 @@
 					"file": "app.py",
 					"settings":
 					{
-						"buffer_size": 5334,
+						"buffer_size": 5706,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								631,
-								631
+								4800,
+								4800
 							]
 						],
 						"settings":
@@ -338,7 +358,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 255.0,
+						"translation.y": 2992.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -348,15 +368,15 @@
 					"file": "post.py",
 					"settings":
 					{
-						"buffer_size": 3487,
+						"buffer_size": 4183,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3341,
-								3341
+								2782,
+								2782
 							]
 						],
 						"settings":
@@ -365,7 +385,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1819.0,
+						"translation.y": 1343.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -408,8 +428,8 @@
 						"selection":
 						[
 							[
-								8463,
-								8463
+								5487,
+								5487
 							]
 						],
 						"settings":
@@ -418,7 +438,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5015.0,
+						"translation.y": 3451.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -553,6 +573,58 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1816.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "templates/default/list.html",
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								191,
+								191
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "templates/default/edit.html",
+					"settings":
+					{
+						"buffer_size": 340,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								211
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
